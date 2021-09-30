@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- Venxia Niu 17282@my.westlakegirls.school.nz -->
+<title> results </title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <div class="wrapper">
+       <div class="navbar navbar_1">
+           <div class="logo">Help with<span> NCEA!</span></div>
+           <ul class="menu">
+               <li><a href="index.html">ncea home</a></li>
+               <li><a href="info.html">NCEA Help</a></li>
+               <li><a href="results.html" class="active">NCEA Awards</a></li>
+               <li><a href="discussion.html">NCEA Contact</a></li>
+           </ul>
+       </div>
+    </div>
+
+    <div class="main">
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/award.png" class="award">
+            <div id="circle">
+                <div class="meow one">
+                    <div class="row-meow">
+                        <div class="column-meow">
+                            <img src="images/icon-1.png">
+                            <h1>University Entrance</h1>
+                            <p>University entry requirement.</p> 
+                        </div>
+                        <div class="column-meow">
+                            <p class="ue-para">You need to achieve NCEA Level 3. You do this by obtaining 80 credits at achieved, merit or excellence. The 80 credits must also include 14 credits in at least 3 UE approved subjects that also meet literacy and numeracy requirements.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="meow two">
+                    <div class="row-meow">
+                        <div class="column-meow">
+                            <img src="images/icon-2.png"> 
+                            <h1>Scholarships</h1>
+                            <p class="scholar-def">A financial award for students.</p>
+                        </div>
+                        <div class="column-meow">
+                            <p class="scholar-para"> Scholarship assesses a student's ability to showcase their high-level thinking. As well as their skills on integration, incorporation and applying their thinking to complex problems.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="meow three">
+                    <div class="row-meow">
+                        <div class="column-meow">
+                            <img src="images/icon-3.png"> 
+                             <h1>Vocational Pathways</h1>
+                             <p>A different way to achieve Level 2.</p>
+                        </div>
+                        <div class="column-meow">
+                         <p class="vocation-para">Students can choose different vocational pathways they can study. These can include Construction, Technology, Service or many more. Through these pathways, students can earn credits and can pass NCEA Level 2 if they meet certain requirements. This allows students to get a better understanding of the types of jobs and opportunities	available to them.  </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="meow four">
+                    <div class="row-meow">
+                        <div class="column-meow">
+                            <img src="images/icon-4.png">
+                            <h1>Endorsements</h1>
+                            <p>Recognising high achievement.</p>
+                        </div>
+                        <div class="column-meow">
+                         <p class="endorse-para">Students can  gain an endorsement in two ways. Firstly, A Certificate Endorsement can be obtained at all levels by achieving 50 merit or 50 excellence credits. A Subject Endorsement can be obtained at all levels by achieving 14 credits at achieved, merit or excellence and at least 3 of the 14 credits from an externally assessed standard.  </p> 
+                        </div>
+                      </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="images/up.png" id="upbtn">
+            <h3>Awards</h3>
+            <img src="images/down.png" id="downbtn">
+        </div>
+    </div>
+
+    
+    
+    <script>
+        var circle = document.getElementById("circle");
+        var upbtn = document.getElementById("upbtn");
+        var downbtn = document.getElementById("downbtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform =rotateSum;
+            rotateValue = rotateSum;
+        }
+        downbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform =rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+    </body>
